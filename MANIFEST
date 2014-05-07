@@ -5,9 +5,13 @@ META.json
 README.md
 cpanfile
 examples/client-anyevent.pl
+examples/client-tls-anyevent.pl
 examples/extract_huff_codes.pl
 examples/extract_static_table.pl
 examples/server-anyevent.pl
+examples/server-tls-anyevent.pl
+examples/test.crt
+examples/test.key
 lib/Protocol/HTTP2.pm
 lib/Protocol/HTTP2/Client.pm
 lib/Protocol/HTTP2/Connection.pm
@@ -37,6 +41,8 @@ t/00_compile.t
 t/01_HeaderCompression.t
 t/02_Huffman.t
 t/03_connection.t
+t/04_continuation.t
 t/05_trace.t
+t/continuation.request.data
 META.yml
 MANIFEST

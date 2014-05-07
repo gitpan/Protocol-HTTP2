@@ -3,7 +3,7 @@ use 5.008005;
 use strict;
 use warnings;
 
-our $VERSION = "0.02";
+our $VERSION = "0.03";
 
 our $draft = "12";
 
@@ -91,7 +91,7 @@ it under the same terms as Perl itself.
 
 =head1 AUTHOR
 
-Vladimir Lettiev E<lt>thecrux@gmail.com<gt>
+Vladimir Lettiev E<lt>thecrux@gmail.comE<gt>
 
 =cut
 

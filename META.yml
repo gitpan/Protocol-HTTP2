@@ -1,7 +1,7 @@
 ---
 abstract: 'HTTP/2 protocol (draft 12) implementation'
 author:
-  - 'Vladimir Lettiev <thecrux@gmail.com<gt>'
+  - 'Vladimir Lettiev <thecrux@gmail.com>'
 build_requires:
   Test::More: 0.98
 configure_requires:
@@ -28,7 +28,7 @@ no_index:
 provides:
   Protocol::HTTP2:
     file: lib/Protocol/HTTP2.pm
-    version: 0.02
+    version: 0.03
   Protocol::HTTP2::Client:
     file: lib/Protocol/HTTP2/Client.pm
   Protocol::HTTP2::Connection:
@@ -85,6 +85,4 @@ resources:
   bugtracker: https://github.com/vlet/p5-Protocol-HTTP2/issues
   homepage: https://github.com/vlet/p5-Protocol-HTTP2
   repository: git://github.com/vlet/p5-Protocol-HTTP2.git
-version: 0.02
-x_contributors:
-  - 'Vladimir Lettiev <thecrux@gmail.com>'
+version: 0.03
