@@ -28,7 +28,7 @@ no_index:
 provides:
   Protocol::HTTP2:
     file: lib/Protocol/HTTP2.pm
-    version: 0.03
+    version: 0.04
   Protocol::HTTP2::Client:
     file: lib/Protocol/HTTP2/Client.pm
   Protocol::HTTP2::Connection:
@@ -75,6 +75,8 @@ provides:
     file: lib/Protocol/HTTP2/Stream.pm
   Protocol::HTTP2::Trace:
     file: lib/Protocol/HTTP2/Trace.pm
+  Protocol::HTTP2::Upgrade:
+    file: lib/Protocol/HTTP2/Upgrade.pm
 requires:
   Hash::MultiValue: 0.12
   IO::Compress::Gzip: 2.033
@@ -85,4 +87,4 @@ resources:
   bugtracker: https://github.com/vlet/p5-Protocol-HTTP2/issues
   homepage: https://github.com/vlet/p5-Protocol-HTTP2
   repository: git://github.com/vlet/p5-Protocol-HTTP2.git
-version: 0.03
+version: 0.04

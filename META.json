@@ -36,6 +36,7 @@
       "develop" : {
          "requires" : {
             "AnyEvent" : "0",
+            "Net::SSLeay" : "> 1.45",
             "Test::CPAN::Meta" : "0",
             "Test::MinimumVersion::Fast" : "0.04",
             "Test::Pod" : "1.41",
@@ -61,7 +62,7 @@
    "provides" : {
       "Protocol::HTTP2" : {
          "file" : "lib/Protocol/HTTP2.pm",
-         "version" : "0.03"
+         "version" : "0.04"
       },
       "Protocol::HTTP2::Client" : {
          "file" : "lib/Protocol/HTTP2/Client.pm"
@@ -131,6 +132,9 @@
       },
       "Protocol::HTTP2::Trace" : {
          "file" : "lib/Protocol/HTTP2/Trace.pm"
+      },
+      "Protocol::HTTP2::Upgrade" : {
+         "file" : "lib/Protocol/HTTP2/Upgrade.pm"
       }
    },
    "release_status" : "stable",
@@ -144,5 +148,5 @@
          "web" : "https://github.com/vlet/p5-Protocol-HTTP2"
       }
    },
-   "version" : "0.03"
+   "version" : "0.04"
 }

@@ -3,7 +3,7 @@ use 5.008005;
 use strict;
 use warnings;
 
-our $VERSION = "0.03";
+our $VERSION = "0.04";
 
 our $draft = "12";
 
@@ -48,7 +48,7 @@ never become production or even finished.
     | Headers (de)compression |    +    |
     | Stream states           |    +    |
     | Flow control            |    -    |
-    | Server push             |    -    |
+    | Server push             |    ~    |
     | Connect method          |    -    |
 
 
@@ -57,9 +57,9 @@ never become production or even finished.
     | DATA            |    ~    |    +    |
     | HEADERS         |    +    |    +    |
     | PRIORITY        |    -    |    -    |
-    | RST_STREAM      |    -    |    +    |
+    | RST_STREAM      |    +    |    +    |
     | SETTINGS        |    +    |    +    |
-    | PUSH_PROMISE    |    -    |    -    |
+    | PUSH_PROMISE    |    -    |    +    |
     | PING            |    -    |    -    |
     | GOAWAY          |    +    |    +    |
     | WINDOW_UPDATE   |    -    |    -    |

@@ -1,5 +1,12 @@
 Revision history for Perl extension Protocol-HTTP2
 
+0.04 2014-05-08T18:22:24Z
+    - enable Upgrade in server-anyevent.pl example
+    - implemented Upgrade support
+    - fixed build/tests on windows
+    - update cpanfile (Net::SSLeay > 1.45 for NPN)
+    - update state doc
+
 0.03 2014-05-07T18:05:50Z
     - client-tls-anyevent.pl with NPN/ALPN support and server's push handling
     - fixed error handling (send only one GOAWAY)

@@ -36,6 +36,7 @@ lib/Protocol/HTTP2/Server.pm
 lib/Protocol/HTTP2/StaticTable.pm
 lib/Protocol/HTTP2/Stream.pm
 lib/Protocol/HTTP2/Trace.pm
+lib/Protocol/HTTP2/Upgrade.pm
 minil.toml
 t/00_compile.t
 t/01_HeaderCompression.t
@@ -43,6 +44,7 @@ t/02_Huffman.t
 t/03_connection.t
 t/04_continuation.t
 t/05_trace.t
+t/06_upgrade.t
 t/continuation.request.data
 META.yml
 MANIFEST
