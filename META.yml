@@ -28,7 +28,7 @@ no_index:
 provides:
   Protocol::HTTP2:
     file: lib/Protocol/HTTP2.pm
-    version: 0.04
+    version: 0.05
   Protocol::HTTP2::Client:
     file: lib/Protocol/HTTP2/Client.pm
   Protocol::HTTP2::Connection:
@@ -82,9 +82,10 @@ requires:
   IO::Compress::Gzip: 2.033
   IO::Uncompress::Gunzip: 2.033
   Log::Dispatch: 2.006
+  MIME::Base64: 3.11
   perl: 5.008005
 resources:
   bugtracker: https://github.com/vlet/p5-Protocol-HTTP2/issues
   homepage: https://github.com/vlet/p5-Protocol-HTTP2
   repository: git://github.com/vlet/p5-Protocol-HTTP2.git
-version: 0.04
+version: 0.05

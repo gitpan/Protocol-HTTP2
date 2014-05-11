@@ -1,8 +1,17 @@
 Revision history for Perl extension Protocol-HTTP2
 
+0.05 2014-05-11T11:10:52Z
+
+    - implemented flow control
+    - implemented WINDOW_UPDATE encoder/decoder
+    - fixed MAX_PAYLOAD_SIZE constant
+    - fixed runtime error in RST_STREAM
+    - required MIME::Base64 >= 3.11 (encode_base64url and decode_base64url)
+    - HTTP/1.1 Upgrade for client
+
 0.04 2014-05-08T18:22:24Z
     - enable Upgrade in server-anyevent.pl example
-    - implemented Upgrade support
+    - implemented HTTP/1.1 Upgrade (server)
     - fixed build/tests on windows
     - update cpanfile (Net::SSLeay > 1.45 for NPN)
     - update state doc
