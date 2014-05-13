@@ -26,7 +26,7 @@ never become production or even finished.
     | Headers (de)compression |    +    |
     | Stream states           |    +    |
     | Flow control            |    ±    |
-    | Server push             |    ±    |
+    | Server push             |    +    |
     | Connect method          |    -    |
 
 
@@ -38,8 +38,8 @@ never become production or even finished.
     | PRIORITY        |    -    |    -    |
     | RST_STREAM      |    +    |    +    |
     | SETTINGS        |    +    |    +    |
-    | PUSH_PROMISE    |    -    |    +    |
-    | PING            |    -    |    -    |
+    | PUSH_PROMISE    |    +    |    +    |
+    | PING            |    +    |    +    |
     | GOAWAY          |    +    |    +    |
     | WINDOW_UPDATE   |    +    |    +    |
     | CONTINUATION    |    ±    |    +    |

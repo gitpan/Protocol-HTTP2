@@ -5,11 +5,9 @@ author:
 build_requires:
   Test::More: 0.98
 configure_requires:
-  CPAN::Meta: 0
-  CPAN::Meta::Prereqs: 0
-  Module::Build: 0.38
+  Module::Build::Tiny: 0.035
 dynamic_config: 0
-generated_by: 'Minilla/v0.13.0, CPAN::Meta::Converter version 2.133380'
+generated_by: 'Minilla/v1.0.0, CPAN::Meta::Converter version 2.133380'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -28,7 +26,7 @@ no_index:
 provides:
   Protocol::HTTP2:
     file: lib/Protocol/HTTP2.pm
-    version: 0.05
+    version: 0.06
   Protocol::HTTP2::Client:
     file: lib/Protocol/HTTP2/Client.pm
   Protocol::HTTP2::Connection:
@@ -88,4 +86,4 @@ resources:
   bugtracker: https://github.com/vlet/p5-Protocol-HTTP2/issues
   homepage: https://github.com/vlet/p5-Protocol-HTTP2
   repository: git://github.com/vlet/p5-Protocol-HTTP2.git
-version: 0.05
+version: 0.06

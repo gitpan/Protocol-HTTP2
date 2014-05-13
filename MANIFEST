@@ -45,6 +45,8 @@ t/03_connection.t
 t/04_continuation.t
 t/05_trace.t
 t/06_upgrade.t
+t/07-ping.t
 t/continuation.request.data
+t/lib/PH2Test.pm
 META.yml
 MANIFEST
