@@ -17,6 +17,12 @@ use constant {
     DEFAULT_INITIAL_WINDOW_SIZE    => 65_535,
     DEFAULT_SETTINGS_COMPRESS_DATA => 0,
 
+    # Priority
+    DEFAULT_WEIGHT => 16,
+
+    # ALTSVC
+    DEFAULT_ALTSVC_MAX_AGE => 86_400,
+
     # Stream states
     IDLE        => 1,
     RESERVED    => 2,
@@ -46,15 +52,14 @@ use constant {
     BLOCKED       => 0xB,
 
     # Flags
-    ACK                 => 0x1,
-    END_STREAM          => 0x1,
-    END_SEGMENT         => 0x2,
-    END_HEADERS         => 0x4,
-    PAD_LOW             => 0x8,
-    PAD_HIGH            => 0x10,
-    PRIORITY_GROUP      => 0x20,
-    COMPRESSED          => 0x20,
-    PRIORITY_DEPENDENCY => 0x40,
+    ACK           => 0x1,
+    END_STREAM    => 0x1,
+    END_SEGMENT   => 0x2,
+    END_HEADERS   => 0x4,
+    PAD_LOW       => 0x8,
+    PAD_HIGH      => 0x10,
+    PRIORITY_FLAG => 0x20,
+    COMPRESSED    => 0x20,
 
     # Errors
     NO_ERROR            => 0,
@@ -96,7 +101,7 @@ our %EXPORT_TAGS = (
     preface => [qw(PREFACE)],
     flags   => [
         qw(ACK END_STREAM END_SEGMENT END_HEADERS PAD_LOW PAD_HIGH
-          PRIORITY_GROUP COMPRESSED PRIORITY_DEPENDENCY)
+          PRIORITY_FLAG COMPRESSED)
     ],
     settings => [
         qw(SETTINGS_HEADER_TABLE_SIZE SETTINGS_ENABLE_PUSH
@@ -104,7 +109,8 @@ our %EXPORT_TAGS = (
           SETTINGS_COMPRESS_DATA)
     ],
     limits => [
-        qw(MAX_INT_SIZE MAX_PAYLOAD_SIZE MAX_FCW_SIZE
+        qw(MAX_INT_SIZE MAX_PAYLOAD_SIZE MAX_FCW_SIZE DEFAULT_WEIGHT
+          DEFAULT_ALTSVC_MAX_AGE
           DEFAULT_HEADER_TABLE_SIZE
           DEFAULT_MAX_CONCURRENT_STREAMS
           DEFAULT_ENABLE_PUSH

@@ -311,8 +311,8 @@ sub send_headers {
     $flags |= END_HEADERS if length($header_block) <= MAX_PAYLOAD_SIZE;
 
     $self->enqueue(
-        $self->frame_encode( HEADERS, $flags,
-            $stream_id, \substr( $header_block, 0, MAX_PAYLOAD_SIZE, '' )
+        $self->frame_encode( HEADERS, $flags, $stream_id,
+            { hblock => \substr( $header_block, 0, MAX_PAYLOAD_SIZE, '' ) }
         )
     );
     while ( length($header_block) > 0 ) {
@@ -442,6 +442,11 @@ sub fcw_update {
 sub ack_ping {
     my ( $self, $payload_ref ) = @_;
     $self->enqueue_first( $self->frame_encode( PING, ACK, 0, $payload_ref ) );
+}
+
+# TODO: Alternative services
+sub altsvc {
+    my ( $self, $port, $proto, $host, $origin ) = @_;
 }
 
 1;

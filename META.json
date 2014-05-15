@@ -55,14 +55,17 @@
       },
       "test" : {
          "requires" : {
-            "Test::More" : "0.98"
+            "AnyEvent" : "0",
+            "Net::SSLeay" : "> 1.45",
+            "Test::More" : "0.98",
+            "Test::TCP" : "0"
          }
       }
    },
    "provides" : {
       "Protocol::HTTP2" : {
          "file" : "lib/Protocol/HTTP2.pm",
-         "version" : "0.06"
+         "version" : "0.07"
       },
       "Protocol::HTTP2::Client" : {
          "file" : "lib/Protocol/HTTP2/Client.pm"
@@ -148,5 +151,5 @@
          "web" : "https://github.com/vlet/p5-Protocol-HTTP2"
       }
    },
-   "version" : "0.06"
+   "version" : "0.07"
 }

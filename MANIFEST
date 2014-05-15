@@ -45,8 +45,12 @@ t/03_connection.t
 t/04_continuation.t
 t/05_trace.t
 t/06_upgrade.t
-t/07-ping.t
+t/07_ping.t
+t/08_priority.t
+t/09_client_server_tcp.t
+t/10_altsvc.t
 t/continuation.request.data
+t/lib/PH2ClientServerTest.pm
 t/lib/PH2Test.pm
 META.yml
 MANIFEST
