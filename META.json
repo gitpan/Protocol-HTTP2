@@ -65,7 +65,7 @@
    "provides" : {
       "Protocol::HTTP2" : {
          "file" : "lib/Protocol/HTTP2.pm",
-         "version" : "0.07"
+         "version" : "0.08"
       },
       "Protocol::HTTP2::Client" : {
          "file" : "lib/Protocol/HTTP2/Client.pm"
@@ -151,5 +151,5 @@
          "web" : "https://github.com/vlet/p5-Protocol-HTTP2"
       }
    },
-   "version" : "0.07"
+   "version" : "0.08"
 }
