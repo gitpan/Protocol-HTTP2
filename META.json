@@ -1,10 +1,10 @@
 {
-   "abstract" : "HTTP/2 protocol (draft 12) implementation",
+   "abstract" : "HTTP/2 protocol (draft 13) implementation",
    "author" : [
       "Vladimir Lettiev <thecrux@gmail.com>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Minilla/v1.0.0",
+   "generated_by" : "Minilla/v2.1.1",
    "license" : [
       "perl_5"
    ],
@@ -46,8 +46,6 @@
       "runtime" : {
          "requires" : {
             "Hash::MultiValue" : "0.12",
-            "IO::Compress::Gzip" : "2.033",
-            "IO::Uncompress::Gunzip" : "2.033",
             "Log::Dispatch" : "2.006",
             "MIME::Base64" : "3.11",
             "perl" : "5.008005"
@@ -65,7 +63,7 @@
    "provides" : {
       "Protocol::HTTP2" : {
          "file" : "lib/Protocol/HTTP2.pm",
-         "version" : "0.08"
+         "version" : "0.09"
       },
       "Protocol::HTTP2::Client" : {
          "file" : "lib/Protocol/HTTP2/Client.pm"
@@ -78,12 +76,6 @@
       },
       "Protocol::HTTP2::Frame" : {
          "file" : "lib/Protocol/HTTP2/Frame.pm"
-      },
-      "Protocol::HTTP2::Frame::Altsvc" : {
-         "file" : "lib/Protocol/HTTP2/Frame/Altsvc.pm"
-      },
-      "Protocol::HTTP2::Frame::Blocked" : {
-         "file" : "lib/Protocol/HTTP2/Frame/Blocked.pm"
       },
       "Protocol::HTTP2::Frame::Continuation" : {
          "file" : "lib/Protocol/HTTP2/Frame/Continuation.pm"
@@ -151,5 +143,5 @@
          "web" : "https://github.com/vlet/p5-Protocol-HTTP2"
       }
    },
-   "version" : "0.08"
+   "version" : "0.09"
 }

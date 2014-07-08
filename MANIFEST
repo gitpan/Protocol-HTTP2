@@ -17,8 +17,6 @@ lib/Protocol/HTTP2/Client.pm
 lib/Protocol/HTTP2/Connection.pm
 lib/Protocol/HTTP2/Constants.pm
 lib/Protocol/HTTP2/Frame.pm
-lib/Protocol/HTTP2/Frame/Altsvc.pm
-lib/Protocol/HTTP2/Frame/Blocked.pm
 lib/Protocol/HTTP2/Frame/Continuation.pm
 lib/Protocol/HTTP2/Frame/Data.pm
 lib/Protocol/HTTP2/Frame/Goaway.pm
@@ -48,7 +46,6 @@ t/06_upgrade.t
 t/07_ping.t
 t/08_priority.t
 t/09_client_server_tcp.t
-t/10_altsvc.t
 t/continuation.request.data
 t/lib/PH2ClientServerTest.pm
 t/lib/PH2Test.pm

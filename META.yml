@@ -1,20 +1,20 @@
 ---
-abstract: 'HTTP/2 protocol (draft 12) implementation'
+abstract: 'HTTP/2 protocol (draft 13) implementation'
 author:
   - 'Vladimir Lettiev <thecrux@gmail.com>'
 build_requires:
-  AnyEvent: 0
+  AnyEvent: '0'
   Net::SSLeay: '> 1.45'
-  Test::More: 0.98
-  Test::TCP: 0
+  Test::More: '0.98'
+  Test::TCP: '0'
 configure_requires:
-  Module::Build::Tiny: 0.035
+  Module::Build::Tiny: '0.035'
 dynamic_config: 0
-generated_by: 'Minilla/v1.0.0, CPAN::Meta::Converter version 2.133380'
+generated_by: 'Minilla/v2.1.1, CPAN::Meta::Converter version 2.141520'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
-  version: 1.4
+  version: '1.4'
 name: Protocol-HTTP2
 no_index:
   directory:
@@ -29,7 +29,7 @@ no_index:
 provides:
   Protocol::HTTP2:
     file: lib/Protocol/HTTP2.pm
-    version: 0.08
+    version: '0.09'
   Protocol::HTTP2::Client:
     file: lib/Protocol/HTTP2/Client.pm
   Protocol::HTTP2::Connection:
@@ -38,10 +38,6 @@ provides:
     file: lib/Protocol/HTTP2/Constants.pm
   Protocol::HTTP2::Frame:
     file: lib/Protocol/HTTP2/Frame.pm
-  Protocol::HTTP2::Frame::Altsvc:
-    file: lib/Protocol/HTTP2/Frame/Altsvc.pm
-  Protocol::HTTP2::Frame::Blocked:
-    file: lib/Protocol/HTTP2/Frame/Blocked.pm
   Protocol::HTTP2::Frame::Continuation:
     file: lib/Protocol/HTTP2/Frame/Continuation.pm
   Protocol::HTTP2::Frame::Data:
@@ -79,14 +75,12 @@ provides:
   Protocol::HTTP2::Upgrade:
     file: lib/Protocol/HTTP2/Upgrade.pm
 requires:
-  Hash::MultiValue: 0.12
-  IO::Compress::Gzip: 2.033
-  IO::Uncompress::Gunzip: 2.033
-  Log::Dispatch: 2.006
-  MIME::Base64: 3.11
-  perl: 5.008005
+  Hash::MultiValue: '0.12'
+  Log::Dispatch: '2.006'
+  MIME::Base64: '3.11'
+  perl: '5.008005'
 resources:
   bugtracker: https://github.com/vlet/p5-Protocol-HTTP2/issues
   homepage: https://github.com/vlet/p5-Protocol-HTTP2
   repository: git://github.com/vlet/p5-Protocol-HTTP2.git
-version: 0.08
+version: '0.09'
